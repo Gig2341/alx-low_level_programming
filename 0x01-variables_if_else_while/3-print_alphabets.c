@@ -11,6 +11,7 @@
 int main(void)
 {
 	char word;
+
 	for (word = 'a'; word <= 'z'; word++)
 		putchar(word);
 	for (word = 'A'; word <= 'Z'; word++)
