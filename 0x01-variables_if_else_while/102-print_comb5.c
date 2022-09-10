@@ -1,31 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
+
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success
  */
 
 int main(void)
 {
-	int p, q
+	int ifirst;
+	int i;
+	int jfirst;
+	int j;
 
-	for (p = 0; p <= 98; p++)
+	for (ifirst = 48; ifirst < 58; ifirst++)
 	{
-		for (q = p + 1; q <= 99; q++)
+		for (i = 48; i < 58; i++)
 		{
-			putchar((p / 10) + '0');
-			putchar((p % 10) + '0');
-			putchar(' ');
-			putchar((q / 10) + '0');
-			putchar((q % 10) + '0');
-			if (p == 98 && q == 99)
-				continue;
-			putchar(',');
-			putchar(' ');
-																			}
+			j = i + 1;
+			jfirst = ifirst;
+			for (; jfirst < 58; jfirst++)
+			{
+		 		for (; j < 58; j++)
+			 	{
+					putchar(ifirst);
+					putchar(i);
+					putchar(' ');
+					putchar(jfirst);
+					putchar(j);
+					if (ifirst != 57 || jfirst != 57 || i != 56 || j != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+														}
+														j = 48;
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
