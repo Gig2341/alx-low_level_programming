@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 		while (i <= 'z')
 		{
 			_putchar(i);
-			ch++:
+			i++:
 		}
 		alphabet_count++;
 		_putchar('\n');
