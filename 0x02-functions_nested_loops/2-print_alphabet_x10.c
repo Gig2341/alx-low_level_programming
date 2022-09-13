@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print ahabets 10
- *
+ * print_alphabet_x10 - print alphabets 10
+ * 
  * Return: Always 0
  */
 
@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 		while (i <= 'z')
 		{
 			_putchar(i);
-			i++:
+			i++;
 		}
 		alphabet_count++;
 		_putchar('\n');
