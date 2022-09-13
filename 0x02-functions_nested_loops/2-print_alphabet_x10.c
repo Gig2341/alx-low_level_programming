@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - print alphabets 10
- * 
+ *
  * Return: Always 0
  */
 
