@@ -2,9 +2,7 @@
 
 /**
  * main: checks whether c is a digit
- *
  * Returns 1 if c is a digit
- *
  * Returns 0 otherwise
  */
 
