@@ -3,24 +3,23 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * prints all alphabets except q and e
  *
- * Return: Always 0 (Success)
+ * Return: Always (0) Success
  */
 
-int main(void)
+int main(int c)
 {
-	char low, e, q;
+	int c;
 	
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
+	for (c = 97; c <= 122; c++)
 	{
-		if (low != e && low != q)
-			putchar(low);
+		if ((c != 101) || (c != 113))
+			_putchar(c);
+		else 
+			continue;
 	}
-	putchar('\n');
-
+	_putchar("\n");
+	
 	return (0);
 }
