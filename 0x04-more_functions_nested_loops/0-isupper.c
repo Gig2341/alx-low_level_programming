@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * tis function will check for for uppercase text
+ * this function will check for uppercase text
  *
  * Returns 1 if c is uppercase
  *
