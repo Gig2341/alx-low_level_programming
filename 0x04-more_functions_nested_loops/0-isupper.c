@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * this function will check for uppercase text
+ * _isupper - checks uppercase
+ * @c: parameter
  *
- * Returns 1 if c is uppercase
- *
- * Returns 0 otherwise
+ * Return: 0 if sucessful
  */
 
 int _isupper(int c)
