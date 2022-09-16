@@ -8,7 +8,7 @@
  * Returns 0 otherwise
  */
 
-int _isupper (int c)
+int _isupper(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
