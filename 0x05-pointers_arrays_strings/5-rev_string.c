@@ -1,13 +1,19 @@
 #include "main.h"
 
-/**
- * puts2 - a function that prints every other character of a string,
- * starting with the first character, followed by a new line.
- * @str: An input string
- * Return: Nothing
- */
 
-void puts2(char *str)
+
+/**
+ *
+ *  * rev_string - reverses a string.
+ *
+ *   * @s: input string.
+ *
+ *    * Return: no return.
+ *
+ *    */
+
+void rev_string(char *s)
+
 {
 
 		int count = 0, i, j;
