@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdout.h>
 
 /**
  * Write a function that prints a string, followed
