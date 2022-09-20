@@ -4,6 +4,7 @@
 /**
  * puts_half - function that prints half of a string, followed by a new line.
  * @str: This is the input string
+ * Return: Always (0)
  */
 
 void puts_half(char *str)
