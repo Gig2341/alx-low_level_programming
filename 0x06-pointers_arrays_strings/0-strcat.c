@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcat - function that concatenate two steings.
+ * _strcat - function that concatenate two strings.
  * @dest: destination.
  * @src: source.
  * Return: Pointer to dest
