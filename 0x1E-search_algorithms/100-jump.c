@@ -7,34 +7,36 @@
  * @ size - the size of the array
  * @ value - the element to be searched for
  *
- * Return : Always 0
+ * Return: The first index where value is located
+ * or -1 if value is not found or if array is NULL
  */
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t prev;
-	size_t step;
+	size_t prev = 0;
+	size_t step = 0, i = 0;
 
-	step = sqrt(value);  // findind block size
-	
-	if (array != NULL);
+	if (array != NULL)
 	{
-		while (array[min(step, size) - 1] < value) //finding the block where the element is present
-		{ 
-			prev = step;
-			step += sqrt(value);
-			if (prev >= size)
-				return (-1);
-		}
-		
-		while (array[prev] < value)  // doing a linear search
+		while (step < size && array[step] < value)
 		{
-			prev++;
-			if (prev == min(step, size))
-				return (-1);
+			prev = step;
+			step = step + sqrt(size);
+			printf("Value checked array[%lu] = [%d]\n",
+			       prev, array[prev]);
 		}
-		
-		if (array[prev] == value)
-			return (prev);
-		return (-1);
+		printf("Value found between indexes [%lu] and [%lu]\n",
+		       prev, step);
+		for (i = prev; i <= step; i++)
+		{
+			if (i < size)
+			{
+				printf("Value checked array[%lu] = [%d]\n",
+				       i, array[i]);
+				if (array[i] == value)
+					return (i);
+			}
+		}
 	}
+	return (-1);
+}
