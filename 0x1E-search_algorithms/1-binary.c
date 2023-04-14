@@ -32,11 +32,9 @@ int binary_search(int *array, size_t size, int value)
 			}
 			else
 			{
-				/*printf("Found %u at index: %u", value, array[middle]);*/
-				break;
+				return (middle);
 			}
 		}
-		printf("Found %u at index: %d", value, (-1));
 	}
 	return (-1);
 }
